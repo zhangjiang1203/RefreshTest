@@ -12,9 +12,17 @@
 		C21E64A521AC1A3300E11CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21E64A321AC1A3300E11CEC /* Main.storyboard */; };
 		C21E64A721AC1A3400E11CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C21E64A621AC1A3400E11CEC /* Assets.xcassets */; };
 		C21E64AA21AC1A3400E11CEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C21E64A821AC1A3400E11CEC /* LaunchScreen.storyboard */; };
+		C21E64B921AC1C6500E11CEC /* ZJMVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21E64B821AC1C6500E11CEC /* ZJMVCViewController.swift */; };
+		C21E64BB21AC273F00E11CEC /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21E64BA21AC273F00E11CEC /* MVVMViewController.swift */; };
+		C21E64BD21AC285E00E11CEC /* MVVMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21E64BC21AC285E00E11CEC /* MVVMManager.swift */; };
+		C21E64BF21AC2EA800E11CEC /* MJRefresh+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21E64BE21AC2EA800E11CEC /* MJRefresh+Rx.swift */; };
+		C72275F228F927DC3A06794F /* Pods_RefreshTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136681D98930341E3DE36260 /* Pods_RefreshTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		136681D98930341E3DE36260 /* Pods_RefreshTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RefreshTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20C9BD96DB639F65A96270DF /* Pods-RefreshTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefreshTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-RefreshTest/Pods-RefreshTest.release.xcconfig"; sourceTree = "<group>"; };
+		3A3CB6A41A6738B0A8E888DD /* Pods-RefreshTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RefreshTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RefreshTest/Pods-RefreshTest.debug.xcconfig"; sourceTree = "<group>"; };
 		C21E649C21AC1A3300E11CEC /* RefreshTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RefreshTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C21E649F21AC1A3300E11CEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C21E64A121AC1A3300E11CEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		C21E64A621AC1A3400E11CEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C21E64A921AC1A3400E11CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C21E64AB21AC1A3400E11CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C21E64B821AC1C6500E11CEC /* ZJMVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJMVCViewController.swift; sourceTree = "<group>"; };
+		C21E64BA21AC273F00E11CEC /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		C21E64BC21AC285E00E11CEC /* MVVMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMManager.swift; sourceTree = "<group>"; };
+		C21E64BE21AC2EA800E11CEC /* MJRefresh+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MJRefresh+Rx.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72275F228F927DC3A06794F /* Pods_RefreshTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EC319DC949656282E629276 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A3CB6A41A6738B0A8E888DD /* Pods-RefreshTest.debug.xcconfig */,
+				20C9BD96DB639F65A96270DF /* Pods-RefreshTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C21E649321AC1A3300E11CEC = {
 			isa = PBXGroup;
 			children = (
 				C21E649E21AC1A3300E11CEC /* RefreshTest */,
 				C21E649D21AC1A3300E11CEC /* Products */,
+				7EC319DC949656282E629276 /* Pods */,
+				DDFCC663BBD9517DF8FA4422 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +78,34 @@
 		C21E649E21AC1A3300E11CEC /* RefreshTest */ = {
 			isa = PBXGroup;
 			children = (
+				C21E64B721AC1C3900E11CEC /* MVVM */,
 				C21E649F21AC1A3300E11CEC /* AppDelegate.swift */,
 				C21E64A121AC1A3300E11CEC /* ViewController.swift */,
 				C21E64A321AC1A3300E11CEC /* Main.storyboard */,
 				C21E64A621AC1A3400E11CEC /* Assets.xcassets */,
 				C21E64A821AC1A3400E11CEC /* LaunchScreen.storyboard */,
 				C21E64AB21AC1A3400E11CEC /* Info.plist */,
+				C21E64B821AC1C6500E11CEC /* ZJMVCViewController.swift */,
 			);
 			path = RefreshTest;
+			sourceTree = "<group>";
+		};
+		C21E64B721AC1C3900E11CEC /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				C21E64BA21AC273F00E11CEC /* MVVMViewController.swift */,
+				C21E64BC21AC285E00E11CEC /* MVVMManager.swift */,
+				C21E64BE21AC2EA800E11CEC /* MJRefresh+Rx.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		DDFCC663BBD9517DF8FA4422 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				136681D98930341E3DE36260 /* Pods_RefreshTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +115,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C21E64AE21AC1A3400E11CEC /* Build configuration list for PBXNativeTarget "RefreshTest" */;
 			buildPhases = (
+				FD913D247B59767F31879F74 /* [CP] Check Pods Manifest.lock */,
 				C21E649821AC1A3300E11CEC /* Sources */,
 				C21E649921AC1A3300E11CEC /* Frameworks */,
 				C21E649A21AC1A3300E11CEC /* Resources */,
+				91298B988D67F265424254DE /* [CP] Embed Pods Frameworks */,
+				5C4ED134E70F2D4A413386E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,12 +177,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C4ED134E70F2D4A413386E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RefreshTest/Pods-RefreshTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91298B988D67F265424254DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RefreshTest/Pods-RefreshTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RefreshTest/Pods-RefreshTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD913D247B59767F31879F74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RefreshTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C21E649821AC1A3300E11CEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C21E64BB21AC273F00E11CEC /* MVVMViewController.swift in Sources */,
 				C21E64A221AC1A3300E11CEC /* ViewController.swift in Sources */,
+				C21E64BD21AC285E00E11CEC /* MVVMManager.swift in Sources */,
+				C21E64B921AC1C6500E11CEC /* ZJMVCViewController.swift in Sources */,
+				C21E64BF21AC2EA800E11CEC /* MJRefresh+Rx.swift in Sources */,
 				C21E64A021AC1A3300E11CEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,9 +397,11 @@
 		};
 		C21E64AF21AC1A3400E11CEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3CB6A41A6738B0A8E888DD /* Pods-RefreshTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A75LEU8F4;
 				INFOPLIST_FILE = RefreshTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +416,11 @@
 		};
 		C21E64B021AC1A3400E11CEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C9BD96DB639F65A96270DF /* Pods-RefreshTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4A75LEU8F4;
 				INFOPLIST_FILE = RefreshTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

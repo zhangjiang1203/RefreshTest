@@ -8,13 +8,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
 
+}
+
+extension ViewController{
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if indexPath.row == 0 {
+            let mvc =  ZJMVCViewController()
+            self.navigationController?.pushViewController(mvc, animated: true)
+        }else{
+            let mvvm =  MVVMViewController()
+            self.navigationController?.pushViewController(mvvm, animated: true)
+        }
+        
+    }
 }
 
