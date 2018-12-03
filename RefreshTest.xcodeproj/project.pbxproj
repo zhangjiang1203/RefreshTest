@@ -17,6 +17,9 @@
 		C21E64BD21AC285E00E11CEC /* MVVMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21E64BC21AC285E00E11CEC /* MVVMManager.swift */; };
 		C21E64BF21AC2EA800E11CEC /* MJRefresh+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21E64BE21AC2EA800E11CEC /* MJRefresh+Rx.swift */; };
 		C72275F228F927DC3A06794F /* Pods_RefreshTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136681D98930341E3DE36260 /* Pods_RefreshTest.framework */; };
+		F7545AF821B5035200C5F455 /* ZJReuseButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7545AF621B5035200C5F455 /* ZJReuseButtonCell.swift */; };
+		F7545AF921B5035200C5F455 /* ZJReuseButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7545AF721B5035200C5F455 /* ZJReuseButtonCell.xib */; };
+		F762370A21B50C2E00CE9AA2 /* ZJReuseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762370921B50C2E00CE9AA2 /* ZJReuseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		C21E64BA21AC273F00E11CEC /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		C21E64BC21AC285E00E11CEC /* MVVMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMManager.swift; sourceTree = "<group>"; };
 		C21E64BE21AC2EA800E11CEC /* MJRefresh+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MJRefresh+Rx.swift"; sourceTree = "<group>"; };
+		F7545AF621B5035200C5F455 /* ZJReuseButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJReuseButtonCell.swift; sourceTree = "<group>"; };
+		F7545AF721B5035200C5F455 /* ZJReuseButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZJReuseButtonCell.xib; sourceTree = "<group>"; };
+		F762370921B50C2E00CE9AA2 /* ZJReuseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJReuseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 				C21E64A821AC1A3400E11CEC /* LaunchScreen.storyboard */,
 				C21E64AB21AC1A3400E11CEC /* Info.plist */,
 				C21E64B821AC1C6500E11CEC /* ZJMVCViewController.swift */,
+				F7545AF621B5035200C5F455 /* ZJReuseButtonCell.swift */,
+				F7545AF721B5035200C5F455 /* ZJReuseButtonCell.xib */,
 			);
 			path = RefreshTest;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 				C21E64BA21AC273F00E11CEC /* MVVMViewController.swift */,
 				C21E64BC21AC285E00E11CEC /* MVVMManager.swift */,
 				C21E64BE21AC2EA800E11CEC /* MJRefresh+Rx.swift */,
+				F762370921B50C2E00CE9AA2 /* ZJReuseModel.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -171,6 +180,7 @@
 			files = (
 				C21E64AA21AC1A3400E11CEC /* LaunchScreen.storyboard in Resources */,
 				C21E64A721AC1A3400E11CEC /* Assets.xcassets in Resources */,
+				F7545AF921B5035200C5F455 /* ZJReuseButtonCell.xib in Resources */,
 				C21E64A521AC1A3300E11CEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +262,9 @@
 				C21E64A221AC1A3300E11CEC /* ViewController.swift in Sources */,
 				C21E64BD21AC285E00E11CEC /* MVVMManager.swift in Sources */,
 				C21E64B921AC1C6500E11CEC /* ZJMVCViewController.swift in Sources */,
+				F7545AF821B5035200C5F455 /* ZJReuseButtonCell.swift in Sources */,
 				C21E64BF21AC2EA800E11CEC /* MJRefresh+Rx.swift in Sources */,
+				F762370A21B50C2E00CE9AA2 /* ZJReuseModel.swift in Sources */,
 				C21E64A021AC1A3300E11CEC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,8 +413,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4A75LEU8F4;
+				DEVELOPMENT_TEAM = 4K3WVJAW63;
 				INFOPLIST_FILE = RefreshTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -420,8 +433,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4A75LEU8F4;
+				DEVELOPMENT_TEAM = 4K3WVJAW63;
 				INFOPLIST_FILE = RefreshTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

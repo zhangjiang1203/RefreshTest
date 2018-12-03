@@ -13,8 +13,6 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-
 }
 
 extension ViewController{
@@ -27,7 +25,6 @@ extension ViewController{
             let mvvm =  MVVMViewController()
             self.navigationController?.pushViewController(mvvm, animated: true)
         }
-        
     }
 }
 
