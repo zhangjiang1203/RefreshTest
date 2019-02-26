@@ -13,7 +13,7 @@ import RxSwift
 class MVVMManager {
     
     //展示数据
-    let tableData = BehaviorRelay(value:[ZJReuseModel]())
+    let tableData = BehaviorRelay(value:[String]())
     //停止头部刷新
     let endHeaderRefreshing:Driver<Bool>?
     //停止尾部刷新
@@ -90,21 +90,13 @@ class APIRequest {
     /// 获取随机数据
     ///
     /// - Returns: 返回driver
-    func getRandomResult() -> Driver<[ZJReuseModel]> {
+    func getRandomResult() -> Driver<[String]> {
         print("正在请求数据......")
-        var items = [ZJReuseModel]()
-        
-        for _ in 0..<15{
-            var model = ZJReuseModel()
-            model.titleInfo = "随机数据\(Int(arc4random()))"
-            model.name = "测试数据"
-            items.append(model)
+        let items = (0 ..< 15).map {_ in
+            "随机数据\(Int(arc4random()))"
         }
-    
-//        let items = (0..<15).ma
-
         return Observable.just(items)
             .delay(1, scheduler: MainScheduler.instance)
-            .asDriver(onErrorJustReturn: [ZJReuseModel]())
+            .asDriver(onErrorDriveWith: Driver.empty())
     }
 }

@@ -17,9 +17,15 @@
 		C21E64BD21AC285E00E11CEC /* MVVMManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21E64BC21AC285E00E11CEC /* MVVMManager.swift */; };
 		C21E64BF21AC2EA800E11CEC /* MJRefresh+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21E64BE21AC2EA800E11CEC /* MJRefresh+Rx.swift */; };
 		C72275F228F927DC3A06794F /* Pods_RefreshTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 136681D98930341E3DE36260 /* Pods_RefreshTest.framework */; };
-		F7545AF821B5035200C5F455 /* ZJReuseButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7545AF621B5035200C5F455 /* ZJReuseButtonCell.swift */; };
-		F7545AF921B5035200C5F455 /* ZJReuseButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7545AF721B5035200C5F455 /* ZJReuseButtonCell.xib */; };
-		F762370A21B50C2E00CE9AA2 /* ZJReuseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F762370921B50C2E00CE9AA2 /* ZJReuseModel.swift */; };
+		F789F400221BA96D001DB108 /* ParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F789F3FF221BA96D001DB108 /* ParallaxViewController.swift */; };
+		F789F405221BA97E001DB108 /* ParallaxHeaderMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F789F402221BA97E001DB108 /* ParallaxHeaderMode.swift */; };
+		F789F406221BA97E001DB108 /* UIScrollView+ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F789F403221BA97E001DB108 /* UIScrollView+ParallaxHeader.swift */; };
+		F789F407221BA97E001DB108 /* ParallaxHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F789F404221BA97E001DB108 /* ParallaxHeader.swift */; };
+		F789F409221BAA00001DB108 /* ParallaxImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F789F408221BAA00001DB108 /* ParallaxImageView.swift */; };
+		F789F40C221BB372001DB108 /* ZJBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F789F40B221BB372001DB108 /* ZJBaseNavigationController.swift */; };
+		F789F40E221BCD3C001DB108 /* ZJBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F789F40D221BCD3C001DB108 /* ZJBaseViewController.swift */; };
+		F7B8BB83221BE2FC00C04FDA /* ZJCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B8BB82221BE2FC00C04FDA /* ZJCommon.swift */; };
+		F7CFCFE9222504AD008263A3 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CFCFE8222504AD008263A3 /* PersonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +43,15 @@
 		C21E64BA21AC273F00E11CEC /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		C21E64BC21AC285E00E11CEC /* MVVMManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMManager.swift; sourceTree = "<group>"; };
 		C21E64BE21AC2EA800E11CEC /* MJRefresh+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MJRefresh+Rx.swift"; sourceTree = "<group>"; };
-		F7545AF621B5035200C5F455 /* ZJReuseButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJReuseButtonCell.swift; sourceTree = "<group>"; };
-		F7545AF721B5035200C5F455 /* ZJReuseButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZJReuseButtonCell.xib; sourceTree = "<group>"; };
-		F762370921B50C2E00CE9AA2 /* ZJReuseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJReuseModel.swift; sourceTree = "<group>"; };
+		F789F3FF221BA96D001DB108 /* ParallaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxViewController.swift; sourceTree = "<group>"; };
+		F789F402221BA97E001DB108 /* ParallaxHeaderMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeaderMode.swift; sourceTree = "<group>"; };
+		F789F403221BA97E001DB108 /* UIScrollView+ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+ParallaxHeader.swift"; sourceTree = "<group>"; };
+		F789F404221BA97E001DB108 /* ParallaxHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxHeader.swift; sourceTree = "<group>"; };
+		F789F408221BAA00001DB108 /* ParallaxImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxImageView.swift; sourceTree = "<group>"; };
+		F789F40B221BB372001DB108 /* ZJBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJBaseNavigationController.swift; sourceTree = "<group>"; };
+		F789F40D221BCD3C001DB108 /* ZJBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJBaseViewController.swift; sourceTree = "<group>"; };
+		F7B8BB82221BE2FC00C04FDA /* ZJCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJCommon.swift; sourceTree = "<group>"; };
+		F7CFCFE8222504AD008263A3 /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +96,10 @@
 		C21E649E21AC1A3300E11CEC /* RefreshTest */ = {
 			isa = PBXGroup;
 			children = (
+				F7CFCFE722250479008263A3 /* Model */,
+				F789F40A221BB33C001DB108 /* Base */,
+				F789F401221BA97E001DB108 /* ParallaxHeader */,
+				F789F3FE221BA8EA001DB108 /* ParallaxView */,
 				C21E64B721AC1C3900E11CEC /* MVVM */,
 				C21E649F21AC1A3300E11CEC /* AppDelegate.swift */,
 				C21E64A121AC1A3300E11CEC /* ViewController.swift */,
@@ -92,8 +108,7 @@
 				C21E64A821AC1A3400E11CEC /* LaunchScreen.storyboard */,
 				C21E64AB21AC1A3400E11CEC /* Info.plist */,
 				C21E64B821AC1C6500E11CEC /* ZJMVCViewController.swift */,
-				F7545AF621B5035200C5F455 /* ZJReuseButtonCell.swift */,
-				F7545AF721B5035200C5F455 /* ZJReuseButtonCell.xib */,
+				F7B8BB82221BE2FC00C04FDA /* ZJCommon.swift */,
 			);
 			path = RefreshTest;
 			sourceTree = "<group>";
@@ -104,7 +119,6 @@
 				C21E64BA21AC273F00E11CEC /* MVVMViewController.swift */,
 				C21E64BC21AC285E00E11CEC /* MVVMManager.swift */,
 				C21E64BE21AC2EA800E11CEC /* MJRefresh+Rx.swift */,
-				F762370921B50C2E00CE9AA2 /* ZJReuseModel.swift */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -115,6 +129,42 @@
 				136681D98930341E3DE36260 /* Pods_RefreshTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F789F3FE221BA8EA001DB108 /* ParallaxView */ = {
+			isa = PBXGroup;
+			children = (
+				F789F3FF221BA96D001DB108 /* ParallaxViewController.swift */,
+				F789F408221BAA00001DB108 /* ParallaxImageView.swift */,
+			);
+			path = ParallaxView;
+			sourceTree = "<group>";
+		};
+		F789F401221BA97E001DB108 /* ParallaxHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F789F402221BA97E001DB108 /* ParallaxHeaderMode.swift */,
+				F789F403221BA97E001DB108 /* UIScrollView+ParallaxHeader.swift */,
+				F789F404221BA97E001DB108 /* ParallaxHeader.swift */,
+			);
+			path = ParallaxHeader;
+			sourceTree = "<group>";
+		};
+		F789F40A221BB33C001DB108 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F789F40B221BB372001DB108 /* ZJBaseNavigationController.swift */,
+				F789F40D221BCD3C001DB108 /* ZJBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F7CFCFE722250479008263A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7CFCFE8222504AD008263A3 /* PersonModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +230,6 @@
 			files = (
 				C21E64AA21AC1A3400E11CEC /* LaunchScreen.storyboard in Resources */,
 				C21E64A721AC1A3400E11CEC /* Assets.xcassets in Resources */,
-				F7545AF921B5035200C5F455 /* ZJReuseButtonCell.xib in Resources */,
 				C21E64A521AC1A3300E11CEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,14 +307,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F789F40C221BB372001DB108 /* ZJBaseNavigationController.swift in Sources */,
 				C21E64BB21AC273F00E11CEC /* MVVMViewController.swift in Sources */,
 				C21E64A221AC1A3300E11CEC /* ViewController.swift in Sources */,
+				F789F409221BAA00001DB108 /* ParallaxImageView.swift in Sources */,
+				F7B8BB83221BE2FC00C04FDA /* ZJCommon.swift in Sources */,
 				C21E64BD21AC285E00E11CEC /* MVVMManager.swift in Sources */,
+				F789F406221BA97E001DB108 /* UIScrollView+ParallaxHeader.swift in Sources */,
 				C21E64B921AC1C6500E11CEC /* ZJMVCViewController.swift in Sources */,
-				F7545AF821B5035200C5F455 /* ZJReuseButtonCell.swift in Sources */,
 				C21E64BF21AC2EA800E11CEC /* MJRefresh+Rx.swift in Sources */,
-				F762370A21B50C2E00CE9AA2 /* ZJReuseModel.swift in Sources */,
+				F789F400221BA96D001DB108 /* ParallaxViewController.swift in Sources */,
+				F789F40E221BCD3C001DB108 /* ZJBaseViewController.swift in Sources */,
+				F789F405221BA97E001DB108 /* ParallaxHeaderMode.swift in Sources */,
+				F7CFCFE9222504AD008263A3 /* PersonModel.swift in Sources */,
 				C21E64A021AC1A3300E11CEC /* AppDelegate.swift in Sources */,
+				F789F407221BA97E001DB108 /* ParallaxHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K3WVJAW63;
 				INFOPLIST_FILE = RefreshTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -435,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4K3WVJAW63;
 				INFOPLIST_FILE = RefreshTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -17,18 +17,11 @@ class MVVMViewController: UIViewController {
     
     let dispose = DisposeBag()
     var myTableView:UITableView!
-    var dataArr = BehaviorRelay.init(value: [ZJReuseModel]())
-    lazy var datasource = RxTableViewSectionedReloadDataSource<SectionModel<String,ZJReuseModel>>(configureCell: { (db, tableview, indexPath, model) -> UITableViewCell in
-        let cell = tableview.dequeueReusableCell(withIdentifier: "ZJReuseButtonCell") as! ZJReuseButtonCell
-        cell.infoModel = model
-        cell.cellSub.subscribe(onNext: { (index) in
-            let info = "我是第\(index)按钮"
-            let alert = UIAlertController.init(title: "你好", message: info, preferredStyle: .alert)
-            let action = UIAlertAction.init(title: "确定", style: .cancel, handler: nil)
-            alert.addAction(action)
-            self.present(alert, animated: true, completion: nil)
-        }).disposed(by: cell.dispose)
-        return cell
+    var dataArr = BehaviorRelay.init(value: [String]())
+    let datasource = RxTableViewSectionedReloadDataSource<SectionModel<String,String>>(configureCell: { (db, tableview, indexPath, model) -> UITableViewCell in
+        let cell = tableview.dequeueReusableCell(withIdentifier: "systemCell")
+        cell?.textLabel?.text = "\(indexPath.row+1)"
+        return cell!
     })
     
     var requestManager:MVVMManager!
@@ -41,7 +34,6 @@ class MVVMViewController: UIViewController {
     func setUpMyUI() {
         myTableView = UITableView()
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "systemCell")
-        myTableView.register(UINib(nibName: "ZJReuseButtonCell", bundle: nil), forCellReuseIdentifier: "ZJReuseButtonCell")
         myTableView.mj_header = MJRefreshNormalHeader()
         myTableView.mj_footer = MJRefreshBackNormalFooter()
         self.view.addSubview(myTableView)
@@ -51,7 +43,7 @@ class MVVMViewController: UIViewController {
         
         //数据处理
         dataArr
-            .map{ [SectionModel<String, ZJReuseModel>(model: "", items: $0)]}
+            .map{ [SectionModel<String, String>(model: "", items: $0)]}
             .bind(to: myTableView.rx.items(dataSource: datasource))
             .disposed(by: dispose)
         //初始化manager
