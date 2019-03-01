@@ -33,8 +33,6 @@ class ViewController: UITableViewController {
             let person = PersonModel(userId: i, name: "张三", sex: i % 2, age: 10+i)
             showArr.append(person)
         }
-        showArr = showArr.filter { $0.userId != 3 }
-        print(showArr)
     }
 
 

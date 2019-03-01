@@ -11,5 +11,7 @@ target 'RefreshTest' do
   pod 'RxDataSources', '~> 3.1.0'
   pod 'MJRefresh','~> 3.1.15.7'
   pod 'SnapKit', '~> 4.2.0'
+  
+  pod 'Bugly'
 
 end

@@ -1,4 +1,5 @@
 PODS:
+  - Bugly (2.5.0)
   - Differentiator (3.1.0)
   - MJRefresh (3.1.15.7)
   - RxAtomic (4.4.0)
@@ -13,13 +14,26 @@ PODS:
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
+  - Bugly
   - MJRefresh (~> 3.1.15.7)
   - RxCocoa (~> 4.4.0)
   - RxDataSources (~> 3.1.0)
   - RxSwift (~> 4.4.0)
   - SnapKit (~> 4.2.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bugly
+    - Differentiator
+    - MJRefresh
+    - RxAtomic
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
+    - SnapKit
+
 SPEC CHECKSUMS:
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
@@ -28,6 +42,6 @@ SPEC CHECKSUMS:
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 29d018e0eee7da53b5866c43bf0e633e6bfb4ead
+PODFILE CHECKSUM: ff1c1f226b4b741effa0de0962b63ca15b5565bf
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.6.0.beta.2
