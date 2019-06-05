@@ -10,7 +10,7 @@ import UIKit
 class ParallaxViewController: ZJBaseViewController {
     
     lazy var headerView:ParallaxImageView = {
-        let view = ParallaxImageView.init(frame: CGRect.init(x: 0, y: 0, width: screenWidth, height: 200))
+        let view = ParallaxImageView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 200))
         return view
     }()
     

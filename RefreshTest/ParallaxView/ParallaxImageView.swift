@@ -13,7 +13,7 @@ class ParallaxImageView: UIView {
     private lazy var bgView: UIImageView = {
         let bw = UIImageView()
         bw.contentMode = .scaleAspectFill
-        bw.image = UIImage.init(named: "mine_bg_for_boy")
+        bw.image = UIImage(named: "mine_bg_for_boy")
         return bw
     }()
     
